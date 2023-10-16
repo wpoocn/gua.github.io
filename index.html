@@ -1,0 +1,1109 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en" class="pixel-ratio-1">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>福利发放</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="static/css/jquery-weui.min.css"> -->
+    <link rel="stylesheet" href="static/css/jquery.mloading.css">
+    <link rel="stylesheet" href="static/css/lottery-ca7411.css">
+    <link rel="stylesheet" href="static/css/tanchu2.css">
+    <link rel="stylesheet" href="static/css/swiper.min.css">
+	<script>
+		var doc_url = "https://docs.qq.com/doc/DUGZMbHphbm5mZ0t0";		
+	</script>
+    <script type="text/javascript" src="static/js/nativeshare.js"></script>
+    <style>
+        img {
+            max-width: 100%;
+        }
+
+        #luck-draw {
+            cursor: pointer;
+        }
+
+        @keyframes music-rotate {
+
+            from {
+                transform: rotate(0)
+            }
+
+            to {
+                transform: rotate(360deg)
+            }
+
+        }
+
+        .main_box_btn {
+            animation: tic .8s linear 0s infinite alternate none running;
+        }
+
+        @-webkit-keyframes tic {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes tic {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.2);
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .music-player {
+            animation: music-rotate 2s linear infinite;
+            -webkit-animation: music-rotate 2s linear infinite;
+            -moz-animation: music-rotate 2s linear infinite
+        }
+
+        ul,
+        ol {
+            padding: 0;
+            margin: 0;
+        }
+
+        hr {
+            margin: 5px 0;
+        }
+
+        ul &gt;
+
+        li {
+            list-style: none;
+        }
+
+        i,
+        em {
+            font-style: normal;
+        }
+
+        p {
+            word-wrap: break-word;
+            word-break: break-all;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        html,
+        body {
+            background: #b6eaff url(static/images/banner.jpg) no-repeat top/100% auto;
+            background-size: 100%;
+        }
+
+
+        input:focus,
+        input:active {
+            outline: none !important;
+        }
+
+        .img-responsive {
+            width: 100%;
+            max-height: 100px;
+        }
+
+        #luck-draw:active {
+            transform: scale(.85);
+            transition: all .2s linear;
+        }
+
+        .luck-draw {
+            background-color: #F70D67;
+            color: #FFFFFF;
+            border-radius: 50%;
+            border: 5px solid #FCE9F9;
+            position: relative;
+            top: 3px;
+        }
+
+        .container &gt;
+
+        h4 {
+            font-size: 16px;
+            margin: 10px 0;
+            height: 40px;
+        }
+
+        .container &gt;
+
+        .my {
+            position: relative;
+        }
+
+        .container .my li {
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .container &gt;
+        .my &gt;
+
+        input {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+
+        .prize img {
+            border-radius: 5px;
+        }
+
+        .log &gt;
+
+        li {
+            line-height: 45px;
+            height: 45px;
+            overflow: hidden;
+        }
+
+        .log &gt;
+
+        li img {
+            margin-top: 5px;
+        }
+
+        .log &gt;
+        li&gt;
+
+        span:first-of-type {
+            width: 120px;
+            overflow: hidden;
+            display: block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .log &gt;
+        li&gt;
+
+        span:last-of-type {
+            overflow: hidden;
+            display: block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .container &gt;
+
+        .my .receive {
+            margin-top: 5px;
+        }
+
+        .log img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+
+        .log span {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+        .prize-con {
+            background-size: 100% 100%;
+            padding: 35px 35px;
+            width: 350px;
+            margin: -30px auto auto;
+            position: relative;
+            transform-origin: 0 0;
+        }
+
+        .prize-con .prize {
+            overflow: hidden;
+            width: 85px;
+            margin: 8px 10px 0 7px;
+        }
+
+        .prize-con .prize:nth-of-type(1) {
+            margin-top: -2px;
+            margin-left: 11px;
+        }
+
+        .prize-con .prize:nth-of-type(2) {
+            margin-top: -2px;
+        }
+
+        .prize-con .prize:nth-of-type(3) {
+            margin-top: -2px;
+            margin-right: 0;
+        }
+
+        .prize-con .prize:nth-of-type(4) {
+            margin-left: 11px;
+        }
+
+        .prize-con .prize:nth-of-type(5) {
+            margin-left: 108px;
+            margin-right: 0;
+        }
+
+        .prize-con .prize:nth-of-type(6) {
+            margin-left: 11px;
+        }
+
+        .prize-con .prize:nth-of-type(8) {
+            margin-right: 0;
+        }
+
+        .li-con {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 2px;
+            right: 0;
+            bottom: 15px;
+            top: 0;
+            margin: auto;
+        }
+
+        .li-con &gt;
+
+        button {
+            display: block;
+            width: 80px;
+            margin: 0 auto;
+            height: 80px;
+            background-color: #FFD800;
+            padding: 0;
+            font-size: 22px;
+            color: #AB6102;
+            font-weight: 600;
+            line-height: 26px;
+        }
+
+        .log-con {
+            border: 1px solid #FD7B86;
+            padding: 5px 10px;
+        }
+
+        .prize-log-title &gt;
+
+        span {
+            display: inline-block;
+            padding: 10px 35px;
+            border-radius: 20px;
+            color: #AB6102;
+            font-size: 16px;
+            background-color: #FFD800;
+            transition: all .25s ease-in;
+            transform-origin: 0 0;
+        }
+
+        /*.btn-open{transform: rotate(25deg);}*/
+
+        .fix-bg {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, .6)
+        }
+
+        .this-prize {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 80%;
+            height: 50%;
+            z-index: 3;
+            margin: auto;
+        }
+
+        .bottom-container {
+            position: fixed;
+            height: 50px;
+            border-radius: 20px 20px 0 0;
+            overflow: hidden;
+            text-align: center;
+            font-weight: 600;
+            line-height: 50px;
+            font-size: 1.35em;
+            color: #FFFFFF;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            right: 0;
+            z-index: 4;
+        }
+
+        .bottom-container &gt;
+        .row &gt;
+
+        div:first-of-type {
+            background-color: #333333;
+        }
+
+        .bottom-container &gt;
+        .row &gt;
+
+        div:last-of-type {
+            background-color: #08B3AB;
+        }
+
+        .bottom-container .col-xs-6 {
+            background-color: #FB004F !important;
+            color: #FFFFFF;
+        }
+
+        .bottom-container .col-xs-6 button {
+            background-color: transparent;
+            border: none;
+        }
+
+        .bottom-container span {
+            margin-right: -16px;
+        }
+
+        .li-row {
+            overflow: hidden;
+            height: 45px;
+        }
+
+        .administrator-con {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            padding: 30% 10%;
+            margin: auto;
+            z-index: 20;
+            display: none;
+            background-color: rgba(0, 0, 0, 0.35);
+        }
+
+        .administrator-con h4 {
+            font-size: 14px;
+        }
+
+        .administrator-con &gt;
+
+        div {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px 0;
+        }
+
+        button {
+            outline: none;
+        }
+    </style>
+
+    <style id="__WXWORK_INNER_SCROLLBAR_CSS">
+        ::-webkit-scrollbar {
+            width: 12px !important;
+            height: 12px !important;
+        }
+
+        ::-webkit-scrollbar-track:vertical {}
+
+        ::-webkit-scrollbar-thumb:vertical {
+            background-color: rgba(136, 141, 152, 0.5) !important;
+            border-radius: 10px !important;
+            background-clip: content-box !important;
+            border: 2px solid transparent !important;
+        }
+
+        ::-webkit-scrollbar-track:horizontal {}
+
+        ::-webkit-scrollbar-thumb:horizontal {
+            background-color: rgba(136, 141, 152, 0.5) !important;
+            border-radius: 10px !important;
+            background-clip: content-box !important;
+            border: 2px solid transparent !important;
+        }
+
+        ::-webkit-resizer {
+            display: none !important;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: .12rem;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+
+    <!-- 滚动用户信息样式 -->
+    <style>
+        .oul {
+            width: 100%;
+        }
+
+        .oul .bd {
+            overflow: hidden;
+            font-size: 1.0rem;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .oul .bd ul {
+            height: 540px;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .oul .bd li {
+            width: 100%;
+            height: 54px;
+            line-height: 54px;
+            padding: 0px 10px;
+            font-size: 1.0em;
+            color: #ffce26;
+            overflow: hidden;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            text-align: left;
+        }
+
+        .oul .bd li img {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin: -3px 10px 3px 0px;
+            border-radius: 27px;
+        }
+
+        .oul .bd li strong {
+            margin: 0 5px 0 0;
+            font-weight: normal;
+            color: #1977d8;
+        }
+    </style>
+
+</head>
+
+<body >
+
+
+    <div id="con">
+        <div style="display: none">
+            <audio id="b1" controls="controls" src="media/1589255716_czmp3.mp3" preload="auto"></audio>
+        </div>
+        <img mode="widthFix" style="width:100%;" src="static/picture/banner_1.jpg">
+        <div style="opacity: .8;width: 2.6rem;height: .2rem;margin:.05rem auto;font-size: .12rem;color:#fff;display: flex;align-items: center;">
+            <!--<img src="static/picture/gonggao.png" style="width: .15rem;height: .15rem;min-width: .15rem;margin-right: .1rem;">
+         Swiper -->
+
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+        <!-- Initialize Swiper -->
+      
+    </div>
+    <div id="prize-con" class="text-center prize-con">
+        <div class="row ">
+            <div class="pull-left prize">
+                <div>
+                    <img class="img-responsive" src="static/picture/88.png" alt="">
+                </div>
+            </div>
+            <div class="pull-left prize">
+                <div>
+                    <img class="img-responsive" src="static/picture/188.png" alt="">
+                </div>
+            </div>
+            <div class="pull-left prize">
+                <div>
+                    <img class="img-responsive" src="static/picture/288.png" alt="">
+                </div>
+            </div>
+            <div class="pull-left prize">
+                <div>
+                    <img class="img-responsive" src="static/picture/520.png" alt="">
+                </div>
+            </div>
+            <div class="pull-left prize">
+                <div>
+                    <img class="img-responsive" src="static/picture/520.png" alt="">
+                </div>
+            </div>
+            <div class="pull-left prize">
+                <div>
+                    <img class="img-responsive" src="static/picture/388.png" alt="">
+                </div>
+            </div>
+            <div class="pull-left prize">
+                <div>
+                    <img class="img-responsive" src="static/picture/688.png" alt="">
+                </div>
+            </div>
+            <div class="pull-left prize">
+                <div>
+                    <img class="img-responsive" src="static/picture/888.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="li-con">
+            <img src="static/picture/bg3.png" alt="" id="luck-draw" class="main_box_btn itemPic" style="width:100%;">
+        </div>
+
+    </div>
+
+
+
+
+    
+
+    <script src="static/js/jquery.min1.js"></script>
+
+   
+
+    
+
+    <script src="static/js/jquery.mloading.js"></script>
+
+
+    <div class="bottomSection" style="margin-top: .rem;background-color: #0000007d;">
+        <div class="footerTop" style="padding: 10px 0px;display: flex;align-items: center;justify-content: center;">
+            <div class="sideLine">
+            </div>
+            <div class="tipText" style="font-size: .15rem;color: #fff;margin: 0 .08rem;">
+                中奖用户 </div>
+            <div class="sideLine">
+            </div>
+        </div>
+     <script>
+	 
+            var gundong_touxiang = new Array(
+           
+                'images/16164244.jpg',
+                'images/1024025.jpg',
+                'images/66577.jpg',
+                'images/470058.jpg',
+                'images/2503423.jpg',
+                'images/327019.jpg',
+                'images/1169522.jpg',
+                'images/97227.jpg',
+                'images/472311.jpg',
+                'images/1019875.jpg',
+               
+      
+            );
+
+            var gundong_name = new Array(
+                '涵宝儿.',
+                '小仙女啊',
+                '简单利索.',
+                '°垂暮',
+                '若相离i',
+                '枕书入梦',
+                '与你撒欢',
+                '一个浪女',
+                '落落清欢',
+                '胡善全',
+              
+            );
+            var chouzhongjiangping = new Array(
+                '幻晶月令+648欧珀  已到账!',
+                '幻晶月令+780欧珀  已到账!',
+                '幻晶月令+980欧珀 已到账!',
+                '幻晶月令+1280欧珀  已到账!',
+                '幻晶月令+2280欧珀 已到账!',
+                '幻晶月令+3280欧珀 已到账!',
+                '幻晶月令+6480欧珀 已到账!'
+            );
+
+            function GetRandomNum(Min, Max) {
+                var Range = Max - Min;
+                var Rand = Math.random();
+                return (Min + Math.round(Rand * Range));
+            }
+
+            function touxiang() {
+                var url = gundong_touxiang[GetRandomNum(0, gundong_touxiang.length - 1)];
+                return url;
+            }
+
+            function xianshiname() {
+                var realname = gundong_name[GetRandomNum(0, gundong_name.length - 1)];
+                return realname;
+            }
+            var fen = 0;
+
+            function fenzhong() {
+
+                fen = parseInt(fen) + 3;
+
+                if (fen < 10) {
+                    fen = "0" + fen;
+                }
+                return fen;
+
+            }
+
+            function xiaoshi() {
+                var dates = new Date();
+                //var fen=GetRandomNum(0,24);
+                var fen = dates.getHours() - 1;
+                if (fen < 10) {
+                    fen = '0' + fen;
+                }
+                return fen;
+            }
+
+            function xianshichouzhong() {
+                var chouzhong = chouzhongjiangping[GetRandomNum(0, chouzhongjiangping.length - 1)];
+                return chouzhong;
+            }
+        </script>
+        <div class="oul">
+            <div class="bd">
+                <ul id="pst_1" style="height:270px;font-size: 14px;">
+                    <script>
+                        for (var i = 0; i < 20; i++) {
+                            document.write('<li><img src="' + touxiang() + '" width="40" height="40"><strong>' + xianshiname() + '</strong>' + xiaoshi() + ':' + fenzhong() + ' 抽中的&nbsp;' + xianshichouzhong() + '</li>')
+                        }
+                    </script>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var total = new Array(3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
+            var urls="https://dzpd.hb699.cn/";
+            var links;
+            function GetRandomNum(Min, Max) {
+                var Range = Max - Min;
+                var Rand = Math.random();
+                return (Min + Math.round(Rand * Range));
+            }
+
+            function GetRequest() {
+
+                var url = location.search;
+
+                var theRequest = new Object();
+
+                if (url.indexOf("?") != -1) {
+
+                    var str = url.substr(1);
+
+                    strs = str.split("&");
+
+                    for (var i = 0; i < strs.length; i++) {
+
+                        theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+
+                    }
+
+                }
+
+                return theRequest;
+
+            }
+
+            var req_params = GetRequest();
+
+            $(document).ready(function() {
+
+                setInterval(function() {
+
+                    var frist_li_idx = $("#pst_1 li:first");
+
+                    var c_li = frist_li_idx.clone();
+
+                    frist_li_idx.animate({
+
+                        "marginTop": "-48px",
+
+                        "opacity": "hide"
+
+                    }, 600, function() {
+
+                        $(this).remove();
+
+                        $("#pst_1").append(c_li);
+
+                    });
+
+                }, 2000);
+
+                $("#pst_scroll").animate({
+
+                    "marginTop": "-54px"
+
+                }, 'normal', function() {
+
+                    $("#pst_1 li:first").appendTo("#pst_1");
+
+                });
+
+            });
+        </script>
+
+
+
+        
+        <p class="explainText" style="font-size: .13rem;text-align: center;color:#fff;opacity: .6;line-height: .23rem;">
+            本活动解释权归官方所有 </p>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var resultBox = $('.resultBox');
+            //console.log(resultBox.outerHeight())
+        }
+    </script>
+
+    <script>
+        const imgList = [
+            "images/688.png",
+            "images/888.png",
+            "images/520.png",
+            "images/388.png",
+            "images/288.png",
+            "images/188.png",
+            "images/520.png",
+            "images/520.png"
+        ]
+        // 应用数据
+
+        const DATA = {
+
+            uid: parseInt('110349'),
+
+            module: 'lottery',
+
+            duration: 3000 // 抽奖时长
+
+        };
+
+        $(function() {
+
+            // 设置九宫格大小
+
+            if (window.innerWidth < 350) {
+
+                $('#prize-con').css({
+
+                    'transform': 'scale(.915)'
+
+                });
+
+            }
+
+            // 滚动显示前30的数据
+
+            if ($('#log-con').children().length > 5) {
+
+                setInterval(function() {
+
+                    var box = $('#log-con');
+
+                    box.animate({
+                        'top': '-45px'
+                    }, 500, function() {
+
+                        var first = box.children()[0];
+
+                        box.append(first);
+
+                        box.css({
+                            'top': '0px'
+                        });
+
+                    });
+
+                }, 1500);
+
+            }
+
+            $('#luck-draw').on('click', function() {
+                playMusic();
+                $('#prize-con').mLoading({
+                    text: '正在抽奖中...'
+                });
+
+                let len = $('#prize-con .prize').length;
+
+                let totalTime = DATA.duration;
+
+                let index = 0;
+                let type_name = "";
+                let T = setInterval(function() {
+
+                    totalTime -= 100;
+
+                    if (index >= len) {
+
+                        $('#prize-con .prize').find('img').css('opacity', 'none');
+
+                        index = 0;
+
+                    }
+
+                    if (totalTime <= 0) {
+
+                        totalTime = DATA.duration;
+                        // $.ajax({
+                        //     url: '?m=Index&a=wining',
+                        //     method: 'POST',
+                        //     data: {},
+                        //     async:true,
+                        //     success: res => {
+                        //         $('#prize-con').mLoading('hide');
+                        //         var res=JSON.parse(res);
+                        //         $("img.model_center_img").attr('src',res.goods_img);
+                        //         $("div.model_bg").show();
+                        //     },
+                        // });
+                        var randomNum = parseInt(Math.random() * (8 - 0)) + 0;
+                        $('#prize-con').mLoading('hide');
+                        $("img.model_center_img").attr('src', imgList[0]);
+                        $("div.model_bg").show();
+                        window.localStorage.setItem("toshare", 1)
+                        window.localStorage.setItem("prizeImg", imgList[0])
+                        clearInterval(T);
+                        return;
+                    }
+
+                    $('#prize-con .prize').eq(index).find('img').css('opacity', '.4');
+
+                    $('#prize-con .prize').eq(index - 1).find('img').css('opacity', '1');
+
+                    index++;
+
+                }, 100);
+
+            });
+
+
+
+            $('#rule-btn').on('click', function() {
+
+                if ($(this).hasClass('btn-open')) {
+
+                    $(this).removeClass('btn-open');
+
+                } else {
+
+                    $(this).addClass('btn-open');
+
+                }
+
+                $('#rule-con').stop().slideToggle(350);
+
+            });
+
+        });
+        $("#close").click(function() {
+            $('#this-prize-bg').hide();
+            window.location.reload();
+        });
+    </script>
+    <div class="model_bg" style="display: none;">
+        <div bindtap="goShare" class="model flex_col model_show">
+            <div catch:tap="modelClick" class="model_row flex_col">
+
+                <div class="model_top">
+                    <div class="model_top_t">恭喜获得</div>
+                </div>
+                <div class="model_center flex_col">
+                    <img class="model_center_img" mode="widthFix" src="">
+                </div>
+                <div class="model_bd"></div>
+                <button class="model_btn lingqu">点击领取</button>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+        .fixed,
+        .fixed2 {
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999999999;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .8);
+        }
+
+        .fixed2 {
+            display: none;
+        }
+    </style>
+    <div class="fixed" style="display: none;">
+        <div style="font-size: .12rem;background-color:#fff;text-align: center;border:2px solid #F3DFBF;padding:.1rem;border-radius: 10px;width:3rem;box-sizing: border-box;">
+
+            <p style="display: flex;align-items: center;justify-content: flex-end;" id="fixed_close"></p>
+            <img src="static/picture/1590385501_classify_img.png" style="display: block;margin:10px auto;">
+			<!--修改连接-->
+            <a id="tips" class="lingqu">恭喜您抽到了兑换码，点击当前蓝色字体领取奖励！</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+         function getid(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+
+
+// var url = urls + "/apis/api.php?name=getcon&id=" + getid('id');
+
+//  $.getJSON(url, function (result) {
+//      var qlink = result.link;
+//      var times = result.edate;
+//      var tmp = Date.parse(new Date()).toString();
+//      tmp = tmp.substr(0, 10);
+//      if (times - tmp < 0) { //edate 到期重定向到指定页面
+//          window.location.href = "error.html";
+//          return false;
+//      }
+//      if (times == "") {
+//          alert('获取信息失败,请联系管理员');
+//      } else {
+//          //  window.location.href=qlink;
+//          document.title = result.title;
+//          links = result.link;
+//          $('#tips').text(result.tips);
+//          $("#tips").attr("href", links);
+
+
+//      }
+//  });
+
+       
+
+
+
+
+        function share() {
+            setTimeout(function() {
+                $(".model_bg").hide();
+                $("#fixed_close").css('display', 'flex');
+                $(".fixed").css('display', 'flex');
+            }, 5000);
+            $.ajax({
+                url: '?m=Index&a=is_share',
+                success: function() {}
+            });
+            if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                call('qqFriend');
+            } else {
+                //console.log(123123);
+                window.open("https://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.bshare.cn%2F%3Futm_source%3Dbshare%26utm_campaign%3Dbshare%26utm_medium%3Dqqim%26bsh_bid%3D5509697533&desc=bShare%E5%88%86%E4%BA%AB%E5%BF%AB%E4%B9%90%20%E4%B8%AD%E5%9B%BD%E6%9C%80%E5%BC%BA%E5%A4%A7%E7%9A%84%E7%A4%BE%E4%BC%9A%E5%8C%96%E5%88%86%E4%BA%AB%E5%88%86%E4%BA%AB%E5%B7%A5%E5%85%B7%EF%BC%8C%E9%82%80%E8%AF%B7%E6%82%A8%E6%9D%A5%E4%BD%93%E9%AA%8C%EF%BC%81&pics=&site=bshare");
+            }
+        }
+
+        function playMusic() {
+            var audioEle = document.getElementById("b1");
+            audioEle.load();
+            audioEle.play();
+     //       console.log("SS", audioEle.play())
+        }
+        $(".lingqu").click(function() {
+
+            location.href = doc_url;
+//修改连接
+
+            return true
+            $(".model_bg").hide();
+            $("#fixed_close").css('display', 'flex');
+            $(".fixed").css('display', 'flex');
+            $(".fixed2").css('display', 'none');
+        });
+        $("#fixed_close").click(function() {
+            var peizeImg = window.localStorage.getItem("prizeImg");
+            $("img.model_center_img").attr('src', peizeImg);
+            $(".model_bg .model_bottom").hide();
+            $(".fixed").css('display', 'none');
+            $(".model_bg").show();
+        });
+    </script>
+    <script type="text/javascript">
+        if (window.localStorage.getItem("toshare")) {
+            $(".model_bg").hide();
+            $("#fixed_close").css('display', 'flex');
+            $(".fixed").css('display', 'flex');
+        }
+        //判断是否微信登陆
+        function isWeiXin() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            console.log(ua);
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var nativeShare = new NativeShare()
+        var shareData = {
+            title: '',
+            desc: '',
+            // 如果是微信该link的域名必须要在微信后台配置的安全域名之内的。
+            link: window.location.href,
+            icon: '',
+            // 不要过于依赖以下两个回调，很多浏览器是不支持的
+            success: function() {
+
+            },
+            fail: function() {
+                console.log("fail")
+            }
+        }
+        nativeShare.setShareData(shareData)
+
+        function call(command) {
+            try {
+                if (isWeiXin()) {
+                    alert("请点击微信右上角进行分享");
+                    return false;
+                }
+                nativeShare.call(command)
+            } catch (err) {
+                // 如果不支持，你可以在这里做降级处理
+                //alert(err.message)
+                console.log("err.message")
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
